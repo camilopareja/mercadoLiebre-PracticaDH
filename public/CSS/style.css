@@ -1,0 +1,78 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;  
+    --Verde: #39b54a;
+    --negro: #000000; 
+
+}
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: var(--Amarillo);
+}
+
+.logo-mercadoLiebre img{
+    width: 200px;
+    height: 52px;
+    margin-bottom: 24px;
+    margin-left: 8px;
+}
+
+.boton-busqueda {
+    margin-left: 8px;
+}
+
+.lupa-busqueda {
+    margin-left: 8px;
+}
+ 
+/* .lupa-busqueda i {
+    color: var(--negro);
+} */
+
+header p {
+    margin-left: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 8px;
+}
+
+ul a {
+    color: var(--negro);
+    text-decoration: none;
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i{
+    padding-top: 6px;
+    color: var(--GrisClaro);
+    width: 40px;
+    height: 40px;
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+ /* .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 28px;
+            place-content: center;
+        } */
