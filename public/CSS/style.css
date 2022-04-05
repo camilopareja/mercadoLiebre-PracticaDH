@@ -73,6 +73,23 @@ article img {
     margin-bottom: 12px;
 }
 
+.contenedor-footer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contenedor-footer i {
+    color: var(--Celeste); 
+    margin-bottom: 10px; 
+}
+.contenedor-footer h3 {
+    color: var(--GrisOscuro);
+    margin-bottom: 0;
+}
+.contenedor-footer p {
+    color: var(--GrisOscuro);
+    margin: 0;
+}
+
  /* .cards-container{
             display: grid;
             grid-template-columns: repeat(auto-fill, 240px);
