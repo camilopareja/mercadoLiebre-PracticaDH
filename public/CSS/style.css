@@ -15,13 +15,12 @@
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
     display: grid;
     justify-items: center;
-    margin: 0 5%;
-    width: 90%;
     background-color: #ebebeb;
 }
 
@@ -30,15 +29,16 @@ header {
     background-color: var(--Amarillo);
 }
 
+.logo-mercadoLiebre{
+    text-align: center;
+}
 .logo-mercadoLiebre img{
-    width: 200px;
-    height: 52px;
-    margin-bottom: 24px;
-    margin-left: 8px;
+    width: 30%;
 }
 
 .boton-busqueda {
-    margin-left: 8px;
+    margin: 10px;
+    text-align: center;
 }
 
 .lupa-busqueda button{
@@ -67,39 +67,75 @@ ul a {
     text-decoration: none;
 }
 
+section {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .articulo-paginaInicial {
+    width: 24%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    
+    background-color: white;  
 }
 
 .articulo-paginaInicial img {
-    text-align: center;
-    margin: auto;
+    /* margin: auto; */
+    width: 100%;
 }
 
 .articulo-paginaInicial i{
-    padding: 12px;
-    color: var(--Verde);
-    border: 1px solid var(--negro);
-    border-radius: 100%;
-    width: 37px;
-    height: 37px;
-    padding: 5px;
-
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
 }
 .informacion-articulo-paginaInicio{
-    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    position: relative;
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
 
-article img {
-    width: 200px;
-    height: 200px;
+.informacion-articulo-paginaInicio p{
+    color: var(--GrisOscuro);
 }
+
+.contendor-PrecioOferta {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contendor-PrecioOferta p:nth-child(1) {
+    width: 40%;
+    color: var(--negro);
+    font-weight: bold;
+}
+.contendor-PrecioOferta p:nth-child(2) {
+    width: 60%;
+    color: var(--Verde);
+}
+
+
 
 .burger-menu {
     text-align: center;
