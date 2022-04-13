@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
-    <link rel="StyleSheet" href="static/CSS/style.css">
+    <link rel="StyleSheet" href="static/CSS/crear-cuenta.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,74 @@
         <img src="static/images/img-home-banner.jpg" alt="">
     </section>
     <main>
-        
+        <section class="contenedor-form-registro">
+            <form action="/views/home.HTML" method="post">
+                <label for="nombre-apellido-usuario">
+                    <input type="text" name="nombre-apellido-usuario" placeholder="Nombre y Apellido" class="boton-general">
+                </label>
+                <label for="nombre-usuario">
+                    <input type="text" name="nombre-usuario" placeholder="Nombre de Usuario" class="boton-general">
+                </label>
+                <label for="nombre-apellido-usuario">
+                    <span class="texto-fecha-nacimiento">Fecha de Nacimiento</span>
+                    <input type="date" name="nombre-apellido-usuario" class="boton-general">
+                </label>
+                <label for="domicilio-usuario">
+                    <input type="text" name="domicilio-usuario" placeholder="Domicilio" class="boton-general">
+                </label>
+                <div class="perfil-usuario"> 
+                    <h3>Perfil del Usuario</h3>
+                    <label for="perfil-usuario">
+                        Comprar
+                        <input type="radio" name="perfil-usuario"> 
+                    </label>
+                    <label for="perfil-usuario">
+                        Vender
+                        <input type="radio" name="perfil-usuario"> 
+                    </label>
+                </div>
+                <div class="intereses-usuario"> 
+                    <h3>Perfil del Usuario</h3>
+                    <label for="intereses-usuario">
+                        Electro
+                        <input type="checkbox" name="intereses-usuario"> 
+                    </label>
+                    <label for="intereses-usuario">
+                        Moda
+                        <input type="checkbox" name="intereses-usuario"> 
+                    </label>
+                    <label for="intereses-usuario">
+                        Hogar
+                        <input type="checkbox" name="intereses-usuario"> 
+                    </label>
+                    <label for="intereses-usuario">
+                        Juguetería
+                        <input type="checkbox" name="intereses-usuario"> 
+                    </label>
+                    <label for="intereses-usuario">
+                        Vida Sana
+                        <input type="checkbox" name="intereses-usuario"> 
+                    </label>
+                </div>
+                <label for="foto-usuario">
+                    Subir Foto
+                    <input type="file" name="foto-usuario">
+                </label>
+                <label for="contraseña">
+                    <input type="password" name="contraseña-usuario" placeholder="Contraseña" class="boton-general">
+                </label>
+                <label for="confirmar-contraseña">
+                    <input type="password" name="contraseña-usuario" placeholder="Confirmar Contraseña" class="boton-general">
+                </label>
+                <label for="boton-enviar">
+                    <input type="submit" name="boton-enviar" id="boton-enviar" placeholder="Enviar">
+                </label>
+                <label for="boton-reset">
+                    <input type="reset" name="boton-reset" id="boton-reset" placeholder="Borrar Contenido Formulario">
+                </label>
+
+            </form>
+        </section>
 
     </main>
     <footer>
