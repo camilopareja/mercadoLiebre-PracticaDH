@@ -13,3 +13,7 @@ app.get("/", (req,res) => {
 app.get("/crear-cuenta", (req,res) => {
     res.sendFile(__dirname + "/views/crear-cuenta.html")
 });
+
+app.get("/login", (req,res) => {
+    res.sendFile(__dirname + "/views/login.html")
+});

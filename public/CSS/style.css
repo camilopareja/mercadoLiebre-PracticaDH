@@ -23,94 +23,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-header {
-    width: 100%;
-    background-color: var(--Amarillo);
-}
-
-.encabezado {
-    padding-top: 10px;
-    width: 100%;
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.logo-mercadoLiebre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:50%
-}
-.logo-mercadoLiebre img{
-    /* margin: auto; */
-    width: 70%;
-}
-
-.boton-busqueda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 50%;
-    text-align: center;
-    border: none;
-}
-
-.boton-busqueda input{
-    border: none;
-    border-radius: 3% 0 0 3% ;
-}
-
-.lupa-busqueda{
-    color: var(--GrisOscuro);
-    padding: 0;
-    width: 17px;
-    height: 17px;
-    border: 1px;
-    border-radius: 0 25% 25% 0;
-    background-color: var(--GrisClaro);
-}
-
-.texto-propuesta-valor{
-    margin: 24px auto;
-}
-
-
-header p {
-    margin-left: 8px;
-}
-
-nav {
-    display: none;
-}
-
-
-.banner-promociones{
-    width: 100%;
-    background-color: var(--GrisClaro);
-    
-}
-.banner-promociones img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.burger-menu {
-    text-align: center;
-}
-
-.burger-menu i{
-    padding-top: 6px;
-    color: var(--GrisClaro);
-    width: 40px;
-    height: 40px;
-    background-color: var(--Celeste);
-    border-radius: 5px;
-    margin-bottom: 12px;
-}
-
 /* MAIN */
 
 main {
@@ -233,13 +145,13 @@ section h2{
         width: 33%;
     }
 
-    .boton-busqueda input{
-        height: 40%;
+    .boton-busqueda input:nth-child(1){
+        height: 25px;
         width: 50%;
     }
 
     .lupa-busqueda{
-        height: 40%;
+        height: 25px;
         border: 1px;
         border-radius: 0 25% 25% 0;
         background-color: var(--GrisClaro);
@@ -298,11 +210,5 @@ section h2{
     ul a {
         color: var(--negro);
         text-decoration: none;
-    }
-}
-
-@media(min-width: 840px) {
-    .articulo-pagina-inicial {
-        width: 24%; 
     }
 }

@@ -1,0 +1,206 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;  
+    --Verde: #39b54a;
+    --negro: #000000; 
+    --cuerpos-de-texto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--Amarillo);
+}
+
+.encabezado {
+    padding-top: 10px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.logo-mercadoLiebre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%
+}
+.logo-mercadoLiebre img{
+    /* margin: auto; */
+    width: 70%;
+}
+
+.contenedor-boton-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-busqueda {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    text-align: center;
+    border: none;
+}
+
+.boton-busqueda input:nth-child(1){
+    border: none;
+    border-radius: 6px 0 0 6px ;
+    width: 80%;  
+}
+
+.lupa-busqueda{
+    color: var(--GrisOscuro);
+    padding: 0;
+    width: 20%;
+    border: 1px;
+    border-radius: 0 6px 6px 0;
+    background-color: var(--GrisClaro);
+}
+
+.texto-propuesta-valor{
+    margin: 24px auto;
+}
+
+
+header p {
+    margin-left: 8px;
+}
+
+nav {
+    display: none;
+}
+
+
+.banner-promociones{
+    width: 100%;
+    background-color: var(--GrisClaro);
+    
+}
+.banner-promociones img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i{
+    padding-top: 6px;
+    color: var(--GrisClaro);
+    width: 40px;
+    height: 40px;
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 485px){
+    .encabezado {
+        justify-content: center;
+    }
+
+    .boton-busqueda input:nth-child(1){
+        height: 25px;
+        width: 80%;
+    }
+
+    .lupa-busqueda{
+        height: 25px;
+        border: 1px;
+        border-radius: 0 6px 6px 0;
+        background-color: var(--GrisClaro);
+    }
+}
+
+
+@media (min-width: 835px) {
+  
+    .logo-mercadoLiebre{
+        width:33%
+    }
+    .contenedor-boton-busqueda {
+        width: 33%;
+    }
+
+    .boton-busqueda input:nth-child(1){
+        height: 25px;
+        width: 80%;
+    }
+
+    .lupa-busqueda{
+        height: 25px;
+        border: 1px;
+        border-radius: 0 6px 6px 0;
+        background-color: var(--GrisClaro);
+    }
+    .texto-propuesta-valor{
+        width: 33%;
+    }
+
+    .nav-header{
+        display: grid;
+        grid-template-columns:  1fr  1fr auto;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    nav ul li {
+        float: left;
+        padding: 10px;
+    }
+
+    .nav-1 {
+        margin-left: 25px;
+    }
+    .nav-2{   /*Esto lo hago para mandar a la izquierda la segunda lista del nav */
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 25px;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 8px;
+    }
+    
+    ul a {
+        color: var(--negro);
+        text-decoration: none;
+    }
+
+}
+
+
