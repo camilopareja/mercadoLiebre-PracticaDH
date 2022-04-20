@@ -31,7 +31,7 @@ main {
     background-color: #ebebeb;
 }
 
-section {
+.main{
     margin: 0 auto;
     width: 90%;
 }
@@ -85,10 +85,6 @@ section h2{
     padding: 15px;
 }
 
-.informacion-articulo-pagina-inicio p{
-    color: var(--GrisOscuro);
-}
-
 .contendor-precio-oferta {
     width: 100%;
     display: flex;
@@ -98,29 +94,42 @@ section h2{
 }
 
 .contendor-precio-oferta p:nth-child(1) {
-    width: 30%;
+    width: 40%;
     color: var(--negro);
     font-weight: bold;
     font-size: var(--precios);
 }
 .contendor-precio-oferta p:nth-child(2) {
-    width: 70%;
+    width: 60%;
     color: var(--Verde);
     font-size: var(--descuentos);
 }
 
 .descripcion-producto-item{
     font-size: var(--descripciones);
+    color: var(--GrisOscuro);
     display: none;
 }
 
 
 /* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 .contenedor-footer {
+    width: 33%;
     padding: 10px;
     text-align: center;
-    margin-bottom: 50px;
 }
+
+.copyright {
+    width: 60%;
+    text-align: left;
+}
+
 .contenedor-footer i {
     color: var(--Celeste); 
     margin-bottom: 10px; 
@@ -128,7 +137,8 @@ section h2{
 }
 .contenedor-footer h3 {
     color: var(--GrisOscuro);
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .contenedor-footer p {
     color: var(--GrisOscuro);
@@ -136,22 +146,40 @@ section h2{
     font-size: var(--cuerpos-de-texto);
 }
 
-
 @media (min-width: 485px) {
 
-    .descripcion-producto-item {
-        display: block;
+    .articulo-pagina-inicial{
+        transition: all 1s;
+        width: 45%; 
+    }
+
+    .articulo-pagina-inicial  .descripcion-producto-item{
+        transition: all 1s;
+    }
+
+    .articulo-pagina-inicial  .informacion-articulo-pagina-inicio i {
+        transition: all 1s;
+    }
+
+    .articulo-pagina-inicial:hover {    
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    .articulo-pagina-inicial:hover  .descripcion-producto-item{
+        display: block; 
+        color: var(--GrisOscuro);
+    }
+
+    .articulo-pagina-inicial:hover  .informacion-articulo-pagina-inicio i {
+        color: var(--Verde);
+        transform: rotate(270deg);
     }
 
     .items{
         flex-direction: row;
     }
     
-    .articulo-pagina-inicial {
-        width: 45%; 
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
 @media(min-width: 840px) {
     .articulo-pagina-inicial {
         width: 24%; 

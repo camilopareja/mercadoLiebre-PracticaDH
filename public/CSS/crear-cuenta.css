@@ -104,7 +104,8 @@ main {
 }
 
 #boton-enviar:hover{
-    cursor: pointer;;
+    cursor: pointer;
+    background-color: #0022AA;
 }
 
 #boton-reset{
@@ -117,11 +118,23 @@ main {
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 .contenedor-footer {
+    width: 33%;
     padding: 10px;
     text-align: center;
-    margin-bottom: 50px;
 }
+
+.copyright {
+    width: 60%;
+    text-align: left;
+}
+
 .contenedor-footer i {
     color: var(--Celeste); 
     margin-bottom: 10px; 
@@ -129,7 +142,8 @@ main {
 }
 .contenedor-footer h3 {
     color: var(--GrisOscuro);
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .contenedor-footer p {
     color: var(--GrisOscuro);
