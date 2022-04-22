@@ -42,9 +42,13 @@ header {
     align-items: center;
     width:50%
 }
+
+.regreso-pagina-principal{
+    text-align: center;
+}
+
 .logo-mercadoLiebre img{
-    /* margin: auto; */
-    width: 70%;
+    width: 80%;
 }
 
 .contenedor-boton-busqueda{
