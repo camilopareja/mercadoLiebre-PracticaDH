@@ -149,16 +149,16 @@ footer {
 @media (min-width: 485px) {
 
     .articulo-pagina-inicial{
-        transition: all 1s;
+        transition: all 1.5s;
         width: 45%; 
     }
 
     .articulo-pagina-inicial  .descripcion-producto-item{
-        transition: all 1s;
+        transition: all 1.5s;
     }
 
     .articulo-pagina-inicial  .informacion-articulo-pagina-inicio i {
-        transition: all 1s;
+        transition: all 1.5s;
     }
 
     .articulo-pagina-inicial:hover {    
