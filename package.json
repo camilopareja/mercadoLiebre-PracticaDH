@@ -1,7 +1,7 @@
 {
   "name": "proyectomodulo4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Práctica módulo 4 - Curso Desarrollo Full Stack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilopareja/mercadoLiebre-PracticaDH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camilopareja/mercadoLiebre-PracticaDH/issues"
+  },
+  "homepage": "https://github.com/camilopareja/mercadoLiebre-PracticaDH#readme"
 }

@@ -122,6 +122,18 @@ nav {
     margin-bottom: 12px;
 }
 
+@media (max-width: 361px){
+    .encabezado {
+        justify-content: space-evenly;
+    }
+    .logo-mercadoLiebre {
+        width: 40%;
+    }
+    .boton-busqueda {
+        width: 90%;
+    }
+}
+
 @media (min-width: 485px){
     .encabezado {
         justify-content: center;

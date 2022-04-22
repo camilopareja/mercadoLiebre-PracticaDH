@@ -117,9 +117,10 @@ main {
 }
 
 /* FOOTER */
-
 footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -131,8 +132,8 @@ footer {
 }
 
 .copyright {
-    width: 60%;
     text-align: left;
+    font-size: var(--cuerpos-de-texto);
 }
 
 .contenedor-footer i {
@@ -149,4 +150,19 @@ footer {
     color: var(--GrisOscuro);
     margin: 0;
     font-size: var(--cuerpos-de-texto);
+}
+
+
+@media (min-width: 485px){
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .contenedor-footer {
+        width: 33%;
+    }
+
 }

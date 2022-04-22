@@ -113,8 +113,11 @@ section h2{
 
 
 /* Footer */
+/* FOOTER */
 footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -126,8 +129,8 @@ footer {
 }
 
 .copyright {
-    width: 60%;
     text-align: left;
+    font-size: var(--cuerpos-de-texto);
 }
 
 .contenedor-footer i {
@@ -178,6 +181,17 @@ footer {
 
     .items{
         flex-direction: row;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .contenedor-footer {
+        width: 33%;
     }
     
 @media(min-width: 840px) {
