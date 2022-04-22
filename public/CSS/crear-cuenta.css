@@ -131,7 +131,7 @@ footer {
 }
 
 .copyright {
-    text-align: left;
+    text-align: center;
     font-size: var(--cuerpos-de-texto);
 }
 
@@ -163,5 +163,7 @@ footer {
     .contenedor-footer {
         width: 33%;
     }
-
+    .contenedor-footer i:hover {
+        color: #0022AA;
+    }
 }
